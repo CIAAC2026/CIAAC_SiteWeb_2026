@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+<title>Contact | CIAAC PARIS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1b1b1e",
+              "surface-container-low": "#f6f2f7",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#e9c176",
+              "surface-container-highest": "#e4e1e5",
+              "on-secondary-container": "#785a1a",
+              "surface-tint": "#525f71",
+              "primary-container": "#0f1c2c",
+              "surface-bright": "#fbf8fc",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#bac8dc",
+              "surface-container-high": "#eae7eb",
+              "secondary": "#775a19",
+              "outline": "#74777d",
+              "surface": "#fbf8fc",
+              "on-tertiary-container": "#85847e",
+              "on-tertiary-fixed-variant": "#474742",
+              "outline-variant": "#c4c6cc",
+              "on-primary-container": "#778598",
+              "on-secondary-fixed-variant": "#5d4201",
+              "inverse-surface": "#303033",
+              "secondary-container": "#fed488",
+              "surface-dim": "#dcd9dd",
+              "background": "#fbf8fc",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f3f0f4",
+              "on-secondary": "#ffffff",
+              "primary": "#000000",
+              "tertiary": "#000000",
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#3a4859",
+              "on-background": "#1b1b1e",
+              "on-tertiary-fixed": "#1c1c18",
+              "on-primary-fixed": "#0f1c2c",
+              "secondary-fixed": "#ffdea5",
+              "surface-container": "#f0edf1",
+              "on-secondary-fixed": "#261900",
+              "surface-variant": "#e4e1e5",
+              "tertiary-fixed": "#e5e2db",
+              "primary-fixed": "#d6e4f9",
+              "on-surface-variant": "#44474c",
+              "inverse-primary": "#bac8dc",
+              "tertiary-container": "#1c1c18",
+              "tertiary-fixed-dim": "#c9c6c0"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .material-symbols-outlined.icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .asymmetric-shape {
+            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        }
+        body {
+            min-height: max(884px, 100dvh);
+            font-family: 'Manrope', sans-serif;
+        }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .pb-safe { padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px)); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased">
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_12px_40px_rgba(27,27,30,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto gap-4">
+<div class="flex items-center gap-4 shrink-0">
+<span class="material-symbols-outlined text-on-surface cursor-pointer hover:opacity-80 transition-opacity">menu</span>
+<a href="index.html" class="font-serif font-bold text-[#0f1c2c] dark:text-slate-100 tracking-[0.2em] text-2xl tracking-tighter uppercase">CIAAC</a>
+</div>
+<nav class="hidden md:flex gap-8 items-center flex-1 justify-center">
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-[10px] uppercase tracking-widest" href="index.html">Accueil</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-[10px] uppercase tracking-widest" href="concept.html">Concept</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-[10px] uppercase tracking-widest" href="exposants.html">Exposants</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-[10px] uppercase tracking-widest" href="programme.html">Programme</a>
+<a class="text-[#775a19] font-bold font-sans text-[10px] uppercase tracking-widest" href="contact.html" aria-current="page">Contact</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-6 py-2 text-xs font-bold tracking-widest rounded-lg hover:opacity-90 transition-all uppercase shrink-0" type="button">RESERVER</button>
+</div>
+</header>
+<main class="pt-32 pb-40 md:pb-24">
+<section class="max-w-7xl mx-auto px-6 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h1 class="font-headline text-5xl md:text-7xl text-primary tracking-tighter leading-tight">
+                    Entrons en <span class="italic text-secondary">communion</span>.
+                </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg">
+                    Rejoignez-nous pour cette aventure humaine et spirituelle hors du commun. Que vous soyez artiste, entrepreneur ou visiteur, votre voix enrichit notre écosystème.
+                </p>
+<div class="flex items-center gap-4 text-secondary font-semibold italic">
+<span class="h-px w-12 bg-secondary/30 shrink-0"></span>
+<p>«&nbsp;L'excellence par le talent, la paix par le partage.&nbsp;»</p>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-secondary/10 rounded-xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+<img alt="Intérieur de galerie parisienne, lumière douce sur murs blancs" class="relative w-full aspect-[4/5] object-cover rounded-xl shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4uRgJFTXvLWOyeSl-RruJfb4Bya85aY0HAGW4UMHAC2PVbIwTKtmpdHHWsb6FP06dkV0SBh8vUETq70odWEqISf3Zetl_2NBVdYY6NAl6G7_SwDbqFkBI27wk40Yu3BRVPCNud1shP0kKQQvULhJzusUBfxweWqXO8twyd_iOWjBigSkNBJhXI_0J-KHrbwcVZy9hBow7xldoinrT1BIGpIPa1h-juuadiOLRynbH9-X0W7trk10syYXtkwASHbh6gfK4mnvINHM">
+</div>
+</section>
+<section class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4 space-y-12">
+<div class="bg-surface-container-low p-10 rounded-xl space-y-8">
+<h3 class="font-headline text-2xl text-primary">Informations</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary shrink-0">location_on</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest text-primary">Siège</p>
+<p class="text-on-surface-variant">Avenue des Champs-Élysées, Paris, France</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary shrink-0">mail</span>
+<div>
+<p class="font-bold text-sm uppercase tracking-widest text-primary">Email</p>
+<p class="text-on-surface-variant"><a class="underline decoration-secondary/40 hover:text-secondary transition-colors" href="mailto:contact@ciaacparis.com">contact@ciaacparis.com</a></p>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/20">
+<p class="font-bold text-sm uppercase tracking-widest text-primary mb-4">Suivez notre éclat</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-secondary transition-colors" href="#" aria-label="Partager">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary hover:bg-secondary transition-colors" href="#" aria-label="Réseaux">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+</div>
+</div>
+</div>
+<div class="h-64 rounded-xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-lg">
+<img alt="Carte stylisée de Paris, repères dorés" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZM-gZqjdM1_zHluH_nU9DxjraCaIyhd9Q_RPvXHGrYFriDK62RWJ9Gs3Jt6TpzIB6arC7QF89SDYnBUJDUkhGbMraA3TvRkZz-bZD3jieeFtD61nURE537DiaaZdiujeM-bO-nb1by3KdMZo16Dk1WxIWjlljvvWGv32P-qzq1FMbrKZzzenlX6HySbPp1KcjHCI1Z0GULntCEHukFB0paZR_uDdAUz06Kd9ni8A4Ct5PeVdWsfa5Jr6gmmZoyCzI3GHEopqOodA">
+</div>
+</div>
+<div class="lg:col-span-8 bg-surface-container-lowest p-8 md:p-16 rounded-xl shadow-[0_12px_40px_rgba(27,27,30,0.06)]">
+<form class="space-y-10" action="#" method="post">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative">
+<label class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mb-2 block group-focus-within:text-secondary transition-colors" for="contact-name">Nom complet</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 transition-all py-3 px-0 placeholder:text-outline-variant/50" id="contact-name" name="name" placeholder="Jean Dupont" type="text" autocomplete="name">
+</div>
+<div class="group relative">
+<label class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mb-2 block group-focus-within:text-secondary transition-colors" for="contact-email">Adresse email</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 transition-all py-3 px-0 placeholder:text-outline-variant/50" id="contact-email" name="email" placeholder="jean@exemple.com" type="email" autocomplete="email" required>
+</div>
+</div>
+<div class="group relative">
+<label class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mb-2 block group-focus-within:text-secondary transition-colors" for="contact-subject">Sujet de votre demande</label>
+<select class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 transition-all py-3 px-0" id="contact-subject" name="subject">
+<option>Demande d'informations générales</option>
+<option>Devenir exposant</option>
+<option>Presse et média</option>
+<option>Partenariats</option>
+</select>
+</div>
+<div class="group relative">
+<label class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mb-2 block group-focus-within:text-secondary transition-colors" for="contact-message">Message</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant focus:border-secondary focus:ring-0 transition-all py-3 px-0 placeholder:text-outline-variant/50 resize-none" id="contact-message" name="message" placeholder="Votre message ou projet..." rows="4"></textarea>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 pt-6">
+<p class="text-xs text-on-surface-variant max-w-sm italic">
+                            En soumettant ce formulaire, vous acceptez notre politique de confidentialité et le traitement de vos données pour répondre à votre demande.
+                        </p>
+<button class="w-full md:w-auto bg-primary-container text-on-primary px-12 py-4 text-xs font-bold tracking-[0.2em] rounded-lg hover:bg-secondary transition-all shadow-xl uppercase" type="submit">
+                            Envoyer le message
+                        </button>
+</div>
+</form>
+</div>
+</section>
+<section class="max-w-5xl mx-auto px-6 mt-32">
+<div class="bg-primary-container p-12 md:p-20 rounded-xl text-center space-y-8 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAUJK5xNLR511iP6YRiDm-YKsJ2dSOEF0E2rPcJoEt09CyUsGLYlCKknkF5zxIC1DyMiE-R6d3zyJeZUbb5QMpdiBwJGFI_O4egm4eoNQu9yOQ4id-H4l03nppfErBewr9iSFp5MFKC9tt2iRsB1q-eidKJqX551WbHNivDZ4yCw3hEHPCXOJd_Ebk6CRpwGdoz96o7CDP9zkAdD2w05LjG7gWq4K6KhVsO3sOV9G-1ZNFz5pAvOz-gJP8x19n5d2997ESE9hMWAA">
+</div>
+<div class="relative z-10 space-y-6">
+<h2 class="font-headline text-3xl md:text-5xl text-on-primary">Les pensées créatives de la CIAAC</h2>
+<p class="text-on-primary-container text-lg max-w-2xl mx-auto">
+                        Inscrivez-vous pour recevoir une dose hebdomadaire d'inspiration mêlant art, business éthique et réflexion spirituelle.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mt-10">
+<input class="flex-grow bg-white/10 border-none rounded-lg px-6 py-4 text-on-primary placeholder:text-white/40 focus:ring-2 focus:ring-secondary" name="newsletter-email" placeholder="votre@email.com" type="email" autocomplete="email" aria-label="Email newsletter">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity" type="button">S'abonner</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="w-full mt-20 max-md:pb-28 bg-[#0f1c2c] dark:bg-black flex flex-col items-center py-12 px-8 text-center space-y-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-[#fbf8fc] font-serif italic text-3xl font-bold tracking-widest">CIAAC</span>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-8">
+<a class="text-slate-400 hover:text-[#775a19] transition-colors font-sans text-sm tracking-normal" href="#">Mentions légales</a>
+<a class="text-slate-400 hover:text-[#775a19] transition-colors font-sans text-sm tracking-normal" href="exposants.html">Devenir exposant</a>
+<a class="text-slate-400 hover:text-[#775a19] transition-colors font-sans text-sm tracking-normal" href="#">Presse</a>
+</div>
+<div class="flex gap-6 mb-8">
+<a class="text-slate-400 hover:text-white transition-colors" href="#" aria-label="Site multilingue">
+<span class="material-symbols-outlined text-2xl">language</span>
+</a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#" aria-label="Communauté">
+<span class="material-symbols-outlined text-2xl">diversity_3</span>
+</a>
+</div>
+<p class="text-[#775a19] font-sans text-sm tracking-normal font-medium">© 2026 CIAAC PARIS. L'Art, le Business et la Foi.</p>
+</footer>
+<nav class="md:hidden fixed bottom-0 left-0 right-0 w-full flex justify-around items-center pb-safe px-2 bg-white dark:bg-[#0f1c2c] shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50 rounded-t-xl min-h-[4rem] pt-2" aria-label="Navigation principale">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 hover:text-[#775a19]" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-0.5">Accueil</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 hover:text-[#775a19]" href="concept.html">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-0.5">Concept</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 hover:text-[#775a19]" href="exposants.html">
+<span class="material-symbols-outlined">palette</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-0.5">Exposants</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 hover:text-[#775a19]" href="programme.html">
+<span class="material-symbols-outlined">event</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-0.5">Programme</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#775a19] dark:text-[#d4af37] border-t-2 border-[#775a19] pt-2" href="contact.html" aria-current="page">
+<span class="material-symbols-outlined icon-fill">mail</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-0.5">Contact</span>
+</a>
+</nav>
+</body>
+</html>
