@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
-<title>CIAAC PARIS - Programme &amp; Visiteurs</title>
+<title>CIAAC - Programme &amp; Visiteurs</title>
+<link rel="icon" type="image/png" href="assets/ciaac-logo.png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
@@ -99,7 +100,7 @@
 <nav class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto gap-4">
 <div class="flex items-center gap-4 shrink-0">
 <span class="material-symbols-outlined text-[#775a19] dark:text-[#d4af37] cursor-pointer hover:opacity-80 transition-opacity">menu</span>
-<a href="index.html" class="font-serif font-bold text-[#0f1c2c] dark:text-slate-100 tracking-[0.2em] text-xl uppercase">CIAAC</a>
+<a href="index.html" class="flex items-center shrink-0 hover:opacity-90 transition-opacity -my-0.5" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" class="h-10 md:h-11 w-auto max-w-[11rem] object-contain object-left"/></a>
 </div>
 <div class="hidden md:flex flex-1 items-center justify-center gap-8 font-label text-sm tracking-widest uppercase">
 <a class="text-slate-400 hover:text-[#775a19] transition-opacity" href="index.html">Accueil</a>
@@ -108,7 +109,7 @@
 <a class="text-[#775a19] font-bold" href="programme.html" aria-current="page">Programme</a>
 <a class="text-slate-400 hover:text-[#775a19] transition-opacity" href="contact.html">Contact</a>
 </div>
-<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label text-xs tracking-widest hover:opacity-90 transition-opacity uppercase shrink-0" type="button">RESERVER</button>
+<a class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label text-xs tracking-widest hover:opacity-90 transition-opacity uppercase shrink-0 inline-flex items-center justify-center" href="https://www.billetweb.fr/ciaac-conference-internationale-des-artiste-et-auteurs-chretiens" target="_blank" rel="noopener noreferrer">RESERVER</a>
 </nav>
 </header>
 <main class="pt-24 pb-40 md:pb-32">
@@ -121,14 +122,21 @@
 <span class="italic text-secondary">immersive</span> et <span class="font-light">spirituelle.</span>
 </h1>
 <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                        Le CIAAC Paris — Conférence Internationale des Artistes et Auteurs Chrétiens — réunit l'artisanat d'excellence et la vision éthique du monde professionnel. Un rendez-vous où la foi devient le moteur de l'innovation et du partage.
+                        La CIAAC — Conférence Internationale des Artistes et Auteurs Chrétiens — réunit l'artisanat d'excellence et la vision éthique du monde professionnel. Un rendez-vous où la foi devient le moteur de l'innovation et du partage.
                     </p>
 </div>
 <div class="w-full md:w-1/3 pb-4">
-<div class="bg-surface-container-low p-8 border-l-4 border-secondary">
-<p class="font-label text-xs tracking-widest uppercase mb-2">Lieu &amp; date</p>
-<p class="font-headline text-xl mb-1">Hilton Paris Charles de Gaulle Airport<br/>8 rue de Rome, 93290 Tremblay-en-France</p>
-<p class="font-body text-on-surface-variant">Le 23 mai 2026</p>
+<div class="bg-surface-container-low p-8 border-l-4 border-secondary rounded-lg shadow-[0_8px_24px_rgba(27,27,30,0.08)]">
+<p class="font-label text-xs tracking-widest uppercase mb-3 text-on-surface-variant">Lieu &amp; date</p>
+<p class="font-headline text-2xl leading-tight text-primary-container">Hilton Paris Charles de Gaulle Airport</p>
+<p class="mt-3 inline-flex items-start gap-2 text-on-surface text-base font-semibold leading-snug">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5" aria-hidden="true">location_on</span>
+<span>8 rue de Rome, 93290 Tremblay-en-France</span>
+</p>
+<p class="mt-4 inline-flex items-center gap-2 font-body text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]" aria-hidden="true">event</span>
+<span class="font-semibold">Le 23 mai 2026</span>
+</p>
 <p class="font-body text-secondary mt-4 font-bold">Accès libre ou sur réservation.</p>
 </div>
 </div>
@@ -209,8 +217,8 @@
 <div class="flex items-center gap-6">
 <span class="font-headline text-2xl text-primary-container min-w-[80px]">10:45</span>
 <div>
-<h5 class="font-bold text-lg">Conférence 1</h5>
-<p class="text-on-surface-variant text-sm italic">Durée : 20–30 min</p>
+<h5 class="font-bold text-lg">Une rencontre qui a boulversé ma vie</h5>
+<p class="text-on-surface-variant text-sm italic">Un coeur à coeur avec pasteur Said OUDJIBOU</p>
 </div>
 </div>
 <span class="material-symbols-outlined text-slate-300 shrink-0">record_voice_over</span>
@@ -228,8 +236,8 @@
 <div class="flex items-center gap-6">
 <span class="font-headline text-2xl text-primary-container min-w-[80px]">12:30</span>
 <div>
-<h5 class="font-bold text-lg">Conférence 2</h5>
-<p class="text-on-surface-variant text-sm italic">Espace auditorium</p>
+<h5 class="font-bold text-lg">Quand dieu t’appelle et quand dieu te cherche</h5>
+<p class="text-on-surface-variant text-sm italic">Partage d’enthousiasme et d’inspiration avec Patricia FOLLET</p>
 </div>
 </div>
 <span class="material-symbols-outlined text-slate-300 shrink-0">record_voice_over</span>
@@ -266,8 +274,8 @@
 <div class="flex items-center gap-6">
 <span class="font-headline text-2xl text-primary-container min-w-[80px]">14:00</span>
 <div>
-<h5 class="font-bold text-lg">Conférence 3</h5>
-<p class="text-on-surface-variant text-sm italic">Durée : 20–30 min</p>
+<h5 class="font-bold text-lg">Les 4 D indispensables pour changer ta vie</h5>
+<p class="text-on-surface-variant text-sm italic">Découvre la passion et les secrets de Lydia BOSSEMBE</p>
 </div>
 </div>
 <span class="material-symbols-outlined text-slate-300 shrink-0">record_voice_over</span>
@@ -438,8 +446,8 @@
                         Réservez vos places pour les conférences et les ateliers exclusifs. Le reste de l'exposition est en accès libre pour tous.
                     </p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<button class="bg-secondary text-white px-10 py-4 rounded-lg font-label tracking-widest uppercase text-sm hover:scale-105 transition-transform duration-300" type="button">Réserver ma place</button>
-<button class="border border-white/30 text-white px-10 py-4 rounded-lg font-label tracking-widest uppercase text-sm hover:bg-white/10 transition-colors" type="button">Infos pratiques</button>
+<a class="bg-secondary text-white px-10 py-4 rounded-lg font-label tracking-widest uppercase text-sm hover:scale-105 transition-transform duration-300 inline-flex items-center justify-center" href="https://www.billetweb.fr/ciaac-conference-internationale-des-artiste-et-auteurs-chretiens" target="_blank" rel="noopener noreferrer">Réserver ma place</a>
+<a class="border border-white/30 text-white px-10 py-4 rounded-lg font-label tracking-widest uppercase text-sm hover:bg-white/10 transition-colors inline-flex items-center justify-center" href="https://www.hilton.com/fr/hotels/cdghitw-hilton-paris-charles-de-gaulle-airport/hotel-location/" target="_blank" rel="noopener noreferrer">Infos pratiques</a>
 </div>
 </div>
 </div>
@@ -447,14 +455,14 @@
 </main>
 <footer class="bg-[#0f1c2c] text-white w-full mt-20 max-md:pb-28">
 <div class="flex flex-col items-center py-16 px-8 text-center space-y-8 max-w-7xl mx-auto">
-<span class="text-[#fbf8fc] font-serif italic text-3xl tracking-widest">CIAAC</span>
+<a href="index.html" class="inline-flex justify-center hover:opacity-90 transition-opacity" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" class="h-14 md:h-16 w-auto max-w-[12rem] object-contain"/></a>
 <div class="flex flex-wrap justify-center gap-8 font-label text-sm uppercase tracking-widest">
 <a class="text-slate-400 hover:text-[#775a19] transition-colors" href="mentions-legales.html">Mentions Légales</a>
-<a class="text-[#775a19] font-bold hover:text-white transition-colors" href="exposants.html">Devenir exposant</a>
-<a class="text-slate-400 hover:text-[#775a19] transition-colors" href="#">Presse</a>
+<a class="text-[#775a19] font-bold hover:text-white transition-colors" href="https://airtable.com/appe3KtRW2qL6TQK3/pag8LBgNGseQ9bQjk/form" target="_blank" rel="noopener noreferrer">Devenir exposant</a>
+<a class="text-slate-400 hover:text-[#775a19] transition-colors" href="contact.html">Presse</a>
 </div>
 <div class="h-px w-24 bg-[#775a19]/30"></div>
-<p class="font-sans text-sm tracking-normal text-slate-500">© 2026 CIAAC PARIS. L'Art, le Business et la Foi.</p>
+<p class="font-sans text-sm tracking-normal text-slate-500">© 2026 CIAAC Organisée par Unikai EVENTS</p>
 </div>
 </footer>
 <nav class="md:hidden fixed bottom-0 left-0 right-0 w-full bg-white dark:bg-[#0f1c2c] shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50 rounded-t-xl flex justify-around items-center pb-safe pt-2 px-2 min-h-[4rem]" aria-label="Navigation principale">
@@ -479,5 +487,9 @@
 <span class="font-sans text-[10px] uppercase tracking-widest mt-1">Contact</span>
 </a>
 </nav>
+<a class="fixed z-[60] bottom-28 md:bottom-8 right-4 md:right-8 flex items-center gap-2.5 rounded-2xl pl-3 pr-4 py-2.5 shadow-[0_10px_40px_rgba(221,42,123,0.35)] hover:scale-[1.04] active:scale-[0.98] transition-transform bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80" href="https://www.instagram.com/ciaacconference/" target="_blank" rel="noopener noreferrer" aria-label="CIAAC sur Instagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 shrink-0" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+<span class="hidden sm:inline font-label text-[10px] font-bold uppercase tracking-[0.2em]">Instagram</span>
+</a>
 </body>
 </html>
