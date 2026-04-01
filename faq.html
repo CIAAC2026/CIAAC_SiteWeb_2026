@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>FAQ | CIAAC - Art, Business &amp; Foi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#1c1c18",
+              "on-secondary-fixed-variant": "#5d4201",
+              "secondary-container": "#fed488",
+              "on-primary": "#ffffff",
+              "inverse-primary": "#bac8dc",
+              "surface-container-high": "#eae7eb",
+              "on-surface": "#1b1b1e",
+              "secondary": "#775a19",
+              "outline-variant": "#c4c6cc",
+              "primary": "#000000",
+              "surface-bright": "#fbf8fc",
+              "outline": "#74777d",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e4e1e5",
+              "surface-tint": "#525f71",
+              "inverse-surface": "#303033",
+              "on-tertiary-container": "#85847e",
+              "on-surface-variant": "#44474c",
+              "primary-container": "#0f1c2c",
+              "on-secondary-container": "#785a1a",
+              "surface-dim": "#dcd9dd",
+              "secondary-fixed-dim": "#e9c176",
+              "on-background": "#1b1b1e",
+              "on-tertiary-fixed-variant": "#474742",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed": "#1c1c18",
+              "on-primary-fixed-variant": "#3a4859",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#778598",
+              "surface": "#fbf8fc",
+              "primary-fixed": "#d6e4f9",
+              "inverse-on-surface": "#f3f0f4",
+              "tertiary-fixed-dim": "#c9c6c0",
+              "tertiary": "#000000",
+              "surface-container": "#f0edf1",
+              "surface-container-lowest": "#ffffff",
+              "background": "#fbf8fc",
+              "surface-container-highest": "#e4e1e5",
+              "error": "#ba1a1a",
+              "tertiary-fixed": "#e5e2db",
+              "on-secondary-fixed": "#261900",
+              "surface-container-low": "#f6f2f7",
+              "secondary-fixed": "#ffdea5",
+              "primary-fixed-dim": "#bac8dc",
+              "on-error": "#ffffff",
+              "on-primary-fixed": "#0f1c2c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-item:focus-within .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-item:focus-within .chevron-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_12px_40px_rgba(27,27,30,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto gap-4">
+<div class="flex items-center gap-4 shrink-0">
+<button id="mobile-menu-toggle" class="md:hidden text-on-surface hover:opacity-80 transition-opacity" type="button" aria-label="Ouvrir le menu" aria-controls="mobile-top-menu" aria-expanded="false">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a href="index.html" class="flex items-center shrink-0 hover:opacity-90 transition-opacity -my-0.5" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" class="h-14 md:h-16 w-auto max-w-[16rem] object-contain object-left"/></a>
+</div>
+<nav class="hidden md:flex gap-8 items-center flex-1 justify-center">
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-sm uppercase tracking-widest" href="index.html">Accueil</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-sm uppercase tracking-widest" href="concept.html">Concept</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-sm uppercase tracking-widest" href="exposants.html">Exposants</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-sm uppercase tracking-widest" href="programme.html">Programme</a>
+<a class="text-[#775a19] font-bold font-sans text-sm uppercase tracking-widest" href="faq.html" aria-current="page">FAQ</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-[#775a19] transition-colors font-sans text-sm uppercase tracking-widest" href="contact.html">Contact</a>
+</nav>
+<a class="bg-secondary text-on-secondary px-6 py-2 text-xs font-bold tracking-widest rounded-lg hover:opacity-90 transition-all uppercase shrink-0 inline-flex items-center justify-center" href="https://www.billetweb.fr/ciaac-conference-internationale-des-artiste-et-auteurs-chretiens" target="_blank" rel="noopener noreferrer">RESERVER</a>
+</div>
+</header>
+<div id="mobile-top-menu" class="md:hidden fixed top-20 left-4 right-4 z-40 hidden">
+<div class="bg-white/95 backdrop-blur-md rounded-xl border border-outline-variant/30 shadow-[0_12px_30px_rgba(27,27,30,0.12)] p-4">
+<nav class="flex flex-col text-sm uppercase tracking-widest font-label">
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="index.html">Accueil</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="concept.html">Concept</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="exposants.html">Exposants</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="programme.html">Programme</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-secondary font-bold" href="faq.html">FAQ</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="contact.html">Contact</a>
+</nav>
+</div>
+</div>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-primary leading-tight tracking-tighter mb-6" style="">
+                    FAQ<br>
+<span class="text-secondary italic font-normal text-4xl md:text-5xl lg:text-6xl" style="">(Foire Aux Questions)</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed" style="">
+                    Trouvez ici les réponses à vos interrogations sur la synergie du moment avec la CIAAC. Une curation de questions essentielles pour préparer votre venue à la conférence.
+                </p>
+</div>
+<div class="flex-1 w-full aspect-[4/5] relative">
+<div class="absolute inset-0 bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist art gallery interior with soft natural light streaming through windows casting elegant shadows on white walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOvUX4jnilpynKoF2aDdly2o5t8jo1Rel528OSgXtsGteGViizpsxIXtO5-J7G7vlo6L9ZD4jY8f3R2yJ530e96G8PB5jgTZRkISCQLDD57oq8PEOCLsOfSoKkjn5SpDdKqQjEvGEYvJ8u8liE5hCFj80kB7e0t5p9nXOfz59LEeFav8y9EdIj3cMEk9JUX4IwoIJhdHQZxFcB_FnCTcYC7vKYEyiZqe37bOR91rLz1HIJcHy41-YtJU5q_3moRnLQSKqH0MOIzKY" style="">
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-8 rounded-lg shadow-xl hidden lg:block">
+<p class="font-headline text-2xl text-on-secondary-container leading-tight" style="">
+                        "La créativité et<br>la réunion des arts "
+                    </p>
+</div>
+</div>
+</header>
+<!-- FAQ Content Grid -->
+<div class="grid lg:grid-cols-12 gap-16">
+<!-- Questions Column -->
+<div class="lg:col-span-7 space-y-4">
+<!-- Q1 -->
+<div class="accordion-item bg-surface-container-lowest rounded-xl p-2 transition-all hover:shadow-md" tabindex="0">
+<button class="w-full text-left px-6 py-5 flex justify-between items-center group" style="">
+<span class="font-headline text-xl md:text-2xl text-on-surface group-hover:text-secondary transition-colors" style="">Pourquoi participer à la conférence CIAAC ?</span>
+<span class="material-symbols-outlined text-secondary chevron-icon transition-transform" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-8 text-on-surface-variant leading-relaxed text-lg" style="">
+                            La conférence CIAAC explore la dimension spirituelle et parfois inexplicable de la création artistique : Des peintures inspirées par des rêves, des idées nées lors d'un moment de prière, des textes qui surgissent soudainement dans l'esprit d'auteurs... Cela se découvre en écoutant les témoignages.
+                        </div>
+</div>
+</div>
+<!-- Q2 -->
+<div class="accordion-item bg-surface-container-lowest rounded-xl p-2 transition-all hover:shadow-md" tabindex="0">
+<button class="w-full text-left px-6 py-5 flex justify-between items-center group" style="">
+<span class="font-headline text-xl md:text-2xl text-on-surface group-hover:text-secondary transition-colors" style="">Il y aura-t-il de la nourriture ou des boissons sur place ?</span>
+<span class="material-symbols-outlined text-secondary chevron-icon transition-transform" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-8 text-on-surface-variant leading-relaxed text-lg" style="">
+                            Les billets VIP comprennent le repas du midi. Un espace restauration est prévu et des boissons pourront être proposées.
+                        </div>
+</div>
+</div>
+<!-- Q3 -->
+<div class="accordion-item bg-surface-container-lowest rounded-xl p-2 transition-all hover:shadow-md" tabindex="0">
+<button class="w-full text-left px-6 py-5 flex justify-between items-center group" style="">
+<span class="font-headline text-xl md:text-2xl text-on-surface group-hover:text-secondary transition-colors" style="">Je ne suis pas croyant.e. Puis-je tout de même venir ?</span>
+<span class="material-symbols-outlined text-secondary chevron-icon transition-transform" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-8 text-on-surface-variant leading-relaxed text-lg" style="">
+                            Bien-sûr! L'évènement est ouvert à toute personne curieuse et intéressée par l'art, l'artistique, la créativité, la lecture, la musique, la danse et la mode... Nous valorisons le dialogue et la découverte.
+                        </div>
+</div>
+</div>
+<!-- Q4 -->
+<div class="accordion-item bg-surface-container-lowest rounded-xl p-2 transition-all hover:shadow-md" tabindex="0">
+<button class="w-full text-left px-6 py-5 flex justify-between items-center group" style="">
+<span class="font-headline text-xl md:text-2xl text-on-surface group-hover:text-secondary transition-colors" style="">Comment m'y rendre en transport ?</span>
+<span class="material-symbols-outlined text-secondary chevron-icon transition-transform" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-8 text-on-surface-variant leading-relaxed text-lg space-y-4">
+<p class="" style="">L’Hôtel Hilton Paris CDG Aéroport est situé au pied de l’aéroport CDG 1, donc pas besoin de navettes.</p>
+<p class="" style="">Vous pouvez simplement prendre le RER B direction Aéroport Charles de Gaulle, descendre à l'arrêt CDG1. Sortie Roissy Pôle. Il vous suffira de suivre les panneaux d'indication &gt;&gt; Hilton.</p>
+<div class="bg-surface-container-low p-4 rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="">info</span>
+<p class="text-sm" style="">L’hôtel est situé à quelques minutes à pied depuis la gare.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Q5 -->
+<div class="accordion-item bg-surface-container-lowest rounded-xl p-2 transition-all hover:shadow-md" tabindex="0">
+<button class="w-full text-left px-6 py-5 flex justify-between items-center group" style="">
+<span class="font-headline text-xl md:text-2xl text-on-surface group-hover:text-secondary transition-colors" style="">Je souhaite être exposant.e, comment faire ?</span>
+<span class="material-symbols-outlined text-secondary chevron-icon transition-transform" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-8 text-on-surface-variant leading-relaxed text-lg space-y-4">
+<p class="" style="">Nous accueillons auteurs, artistes, créateurs, écrivains, designers, peintres, danseurs passionnés qui souhaitent partager leurs œuvres et leur inspiration.</p>
+<ul class="list-disc list-inside space-y-2 text-secondary font-medium">
+<li class="" style="">Abonnez-vous à notre page Instagram CIAAC Conférence</li>
+<li class="" style="">Remplissez notre formulaire d’inscription en ligne</li>
+</ul>
+<p class="text-sm italic" style="">Traitement rapide de votre demande sous 48-72h.</p>
+</div>
+</div>
+</div>
+<!-- Q6 -->
+<div class="accordion-item bg-surface-container-lowest rounded-xl p-2 transition-all hover:shadow-md" tabindex="0">
+<button class="w-full text-left px-6 py-5 flex justify-between items-center group" style="">
+<span class="font-headline text-xl md:text-2xl text-on-surface group-hover:text-secondary transition-colors" style="">Quel matériel est inclus pour les exposant.e.s ?</span>
+<span class="material-symbols-outlined text-secondary chevron-icon transition-transform" style="">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-6 pb-8 text-on-surface-variant leading-relaxed text-lg" style="">
+                            Une configuration de base comprend : 1m20* 1 table, 2 chaises. En fonction du billet choisi (Standard ou VIP), vous bénéficierez de certains avantages supplémentaires. Veuillez consulter le questionnaire d'inscription pour tous les détails.
+                        </div>
+</div>
+</div>
+</div>
+<!-- Side Info Cards -->
+<div class="lg:col-span-5 space-y-8">
+<div class="bg-primary-container text-on-primary p-10 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-3xl mb-4">Besoin de plus d'informations ?</h3>
+<p class="text-on-primary-container mb-8 leading-relaxed">
+                            Notre équipe est disponible pour répondre à vos demandes spécifiques concernant l'organisation ou les partenariats.
+                        </p>
+<a class="inline-flex items-center gap-2 text-white font-label text-sm font-bold tracking-widest uppercase hover:underline" href="contact.html">
+                            Aller vers Contact
+                            <span class="material-symbols-outlined text-base">arrow_forward</span>
+                        </a>
+</div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-secondary">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">warning</span>
+<div>
+<h4 class="font-bold text-xl mb-2">Places Limitées pour l'exposition</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                                Les places sont limitées à 23 exposants pour cette 1ère édition. Il est vivement conseillé de réserver vos places à l'avance pour garantir votre participation.
+                            </p>
+<a class="inline-block mt-6 text-secondary font-bold hover:underline" href="exposants.html">
+                                ALLER VERS EXPOSANTS →
+                            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="mt-16 md:mt-20">
+<div class="bg-primary-container p-8 md:p-12 rounded-xl text-center space-y-6 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAUJK5xNLR511iP6YRiDm-YKsJ2dSOEF0E2rPcJoEt09CyUsGLYlCKknkF5zxIC1DyMiE-R6d3zyJeZUbb5QMpdiBwJGFI_O4egm4eoNQu9yOQ4id-H4l03nppfErBewr9iSFp5MFKC9tt2iRsB1q-eidKJqX551WbHNivDZ4yCw3hEHPCXOJd_Ebk6CRpwGdoz96o7CDP9zkAdD2w05LjG7gWq4K6KhVsO3sOV9G-1ZNFz5pAvOz-gJP8x19n5d2997ESE9hMWAA">
+</div>
+<div class="relative z-10 space-y-6">
+<h2 class="font-headline text-3xl md:text-5xl text-on-primary">Les pensées créatives de la <span class="font-bold">CIAAC</span></h2>
+<p class="text-on-primary-container text-lg max-w-2xl mx-auto">
+                            Inscrivez-vous pour recevoir une dose hebdomadaire d'inspiration mêlant art, business éthique et réflexion spirituelle.
+                        </p>
+<div class="max-w-3xl mx-auto mt-6">
+<iframe class="airtable-embed" src="https://airtable.com/embed/appRG8kVbhVA8nCOS/pagDknCmqNNA8N7Q0/form" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- CTA Section -->
+<section class="bg-surface-container px-6 py-24 text-center">
+<h2 class="font-headline text-4xl md:text-6xl mb-8 max-w-4xl mx-auto leading-tight" style="">Prêt à vivre cette expérience transformative ?</h2>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<button class="px-12 py-5 bg-primary text-on-primary font-bold rounded-lg hover:opacity-90 transition-all text-lg tracking-wide" style="">
+                RÉSERVER MON BILLET
+            </button>
+<button class="px-12 py-5 border-2 border-secondary text-secondary font-bold rounded-lg hover:bg-secondary hover:text-on-secondary transition-all text-lg tracking-wide" style="">
+                DEVENIR EXPOSANT
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-slate-900 dark:bg-black flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-['Noto_Serif'] text-xl text-white" style="">CIAAC</div>
+<p class="font-['Manrope'] text-sm tracking-wide leading-relaxed text-amber-500 dark:text-amber-400 max-w-xs text-center md:text-left" style="">
+                L'Art, le Business &amp; la Foi réunis pour une vision créative nouvelle.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm tracking-wide leading-relaxed" href="#" style="">Mentions Légales</a>
+<a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm tracking-wide leading-relaxed" href="#" style="">Confidentialité</a>
+<a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm tracking-wide leading-relaxed" href="#" style="">Contact</a>
+<a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm tracking-wide leading-relaxed" href="#" style="">Instagram</a>
+<a class="text-slate-400 hover:text-white transition-colors font-['Manrope'] text-sm tracking-wide leading-relaxed" href="#" style="">LinkedIn</a>
+</div>
+<div class="font-['Manrope'] text-sm tracking-wide leading-relaxed text-slate-400 text-center md:text-right" style="">
+            © 2024 CIAAC. L'Art, le Business &amp; la Foi.
+        </div>
+</footer>
+<script>
+(function () {
+  var btn = document.getElementById('mobile-menu-toggle');
+  var panel = document.getElementById('mobile-top-menu');
+  if (!btn || !panel) return;
+
+  function closeMenu() {
+    panel.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  btn.addEventListener('click', function () {
+    var isHidden = panel.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
+  });
+
+  panel.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', function (event) {
+    if (panel.classList.contains('hidden')) return;
+    if (panel.contains(event.target) || btn.contains(event.target)) return;
+    closeMenu();
+  });
+})();
+</script>
+</body>
+</html>
