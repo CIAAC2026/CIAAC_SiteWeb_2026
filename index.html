@@ -81,29 +81,33 @@
         .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
         .letter-spacing-widest { letter-spacing: 0.2em; }
         .pb-safe { padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px)); }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        main { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+        main h1, main h2, main h3, main h4, main h5, main h6 { text-align: left; hyphens: none; -webkit-hyphens: none; }
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-secondary-container">
 <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-[0_12px_40px_rgba(27,27,30,0.06)]">
-<nav class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
-<div class="flex items-center gap-4">
-<button id="mobile-menu-toggle" class="md:hidden text-secondary hover:opacity-70 transition-opacity" type="button" aria-label="Ouvrir le menu" aria-controls="mobile-top-menu" aria-expanded="false">
+<div class="flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4 w-full max-w-7xl mx-auto gap-2 sm:gap-3 md:gap-4">
+<div class="flex items-center gap-2 sm:gap-4 shrink-0 min-w-0">
+<button id="mobile-menu-toggle" class="md:hidden text-secondary hover:opacity-70 transition-opacity shrink-0" type="button" aria-label="Ouvrir le menu" aria-controls="mobile-top-menu" aria-expanded="false">
 <span class="material-symbols-outlined">menu</span>
 </button>
-<a href="index.html" class="flex items-center shrink-0 hover:opacity-90 transition-opacity -my-0.5" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" fetchpriority="high" class="h-14 md:h-16 w-auto max-w-[16rem] object-contain object-left"/></a>
+<a href="index.html" class="flex items-center shrink-0 hover:opacity-90 transition-opacity -my-0.5 min-w-0" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" fetchpriority="high" class="h-11 w-auto max-w-[10rem] sm:h-12 sm:max-w-[12rem] md:h-14 md:max-w-[14rem] lg:h-16 lg:max-w-[16rem] object-contain object-left"/></a>
 </div>
-<div class="hidden md:flex items-center space-x-8 font-label text-sm uppercase tracking-widest">
-<a class="text-secondary font-bold" href="index.html">Accueil</a>
-<a class="text-on-surface hover:opacity-70 transition-opacity" href="concept.html">Concept</a>
-<a class="text-on-surface hover:opacity-70 transition-opacity" href="exposants.html">Exposants</a>
-<a class="text-on-surface hover:opacity-70 transition-opacity" href="programme.html">Programme</a>
-<a class="text-on-surface hover:opacity-70 transition-opacity" href="faq.html">FAQ</a>
-<a class="text-on-surface hover:opacity-70 transition-opacity" href="contact.html">Contact</a>
-</div>
-<a class="bg-secondary text-on-secondary px-6 py-2 rounded-lg text-xs font-bold tracking-widest hover:opacity-90 transition-all inline-flex items-center justify-center" href="https://www.billetweb.fr/ciaac-conference-internationale-des-artiste-et-auteurs-chretiens" target="_blank" rel="noopener noreferrer">RESERVER</a>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-3 lg:gap-5 xl:gap-8 min-w-0 px-1 overflow-x-auto no-scrollbar scroll-smooth font-label uppercase" aria-label="Navigation principale">
+<a class="text-secondary font-bold text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="index.html">Accueil</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="concept.html">Concept</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="exposants.html">Exposants</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="programme.html">Programme</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="faq.html">FAQ</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="contact.html">Contact</a>
 </nav>
+<a class="bg-secondary text-on-secondary px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2 lg:px-6 rounded-lg text-[10px] sm:text-xs font-bold tracking-wide lg:tracking-widest hover:opacity-90 transition-all shrink-0 inline-flex items-center justify-center whitespace-nowrap" href="https://www.billetweb.fr/ciaac-conference-internationale-des-artiste-et-auteurs-chretiens" target="_blank" rel="noopener noreferrer">RESERVER</a>
+</div>
 </header>
-<div id="mobile-top-menu" class="md:hidden fixed top-20 left-4 right-4 z-40 hidden">
+<div id="mobile-top-menu" class="md:hidden fixed top-[4.25rem] sm:top-20 left-4 right-4 z-40 hidden">
 <div class="bg-white/95 backdrop-blur-md rounded-xl border border-outline-variant/30 shadow-[0_12px_30px_rgba(27,27,30,0.12)] p-4">
 <nav class="flex flex-col text-sm uppercase tracking-widest font-label">
 <a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-secondary font-bold" href="index.html">Accueil</a>
@@ -117,12 +121,12 @@
 </div>
 <main class="pb-24 md:pb-0">
 <!-- Hero Section -->
-<section class="relative min-h-[85vh] flex items-center px-6 md:px-20 overflow-hidden">
+<section class="relative min-h-[85vh] flex items-center px-6 md:px-20 overflow-hidden pt-28 sm:pt-32 md:pt-36 pb-12 md:pb-16">
 <div class="absolute inset-0 z-0">
 <div class="absolute inset-0 z-10 bg-gradient-to-r from-[#0f1c2c]/85 via-[#0f1c2c]/70 to-[#775a19]/55"></div>
 <img alt="Professionnels créatifs réunis lors d'un événement artistique haut de gamme" class="w-full h-full object-cover saturate-75 contrast-110 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_SxgTVhm2tbJZ7r7fQI2JM6jDc5EXVGEZZszEgfQ_YEu1td_SvgKH_GrDSpvH4m_pR_tEZOfsiDyU74YBGJuWXriQT0BucWl7vyikUxkXdM8-mFhgVnByfIgk_PWY0OKYa98ljLrY5e276X530aXqcJgl_hmJGyxFA5mPYW-gf9fLmZweNR-pseAyrDcaSPAfNtcydUuDcmPBSy-kUQP56H6wBqZyB8tGfK64UJydxzzboMfcSpKGEi2F4zyUczSi_IKgqK8n8Yo"/>
 </div>
-<div class="relative z-20 max-w-4xl text-white pt-20">
+<div class="relative z-20 max-w-4xl text-white w-full">
 <p class="font-label uppercase tracking-[0.3em] text-secondary-fixed-dim mb-6 text-sm font-semibold">CIAAC - 1ère Édition 2026</p>
 <h1 class="text-4xl md:text-6xl font-headline leading-tight mb-8">
                 Quand nous réunissons l'art et la passion, la lumière rayonne.
