@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+<title>Leaders d'églises | CIAAC</title>
+<link rel="icon" type="image/png" href="assets/ciaac-logo.png">
+<meta name="description" content="Espace réservé aux pasteurs, prêtres, leaders et responsables d'églises lors de la CIAAC 2026.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1b1b1e",
+              "surface-container-low": "#f6f2f7",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#e9c176",
+              "surface-container-highest": "#e4e1e5",
+              "on-secondary-container": "#785a1a",
+              "surface-tint": "#525f71",
+              "primary-container": "#0f1c2c",
+              "surface-bright": "#fbf8fc",
+              "error-container": "#ffdad6",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#bac8dc",
+              "surface-container-high": "#eae7eb",
+              "secondary": "#775a19",
+              "outline": "#74777d",
+              "surface": "#fbf8fc",
+              "on-tertiary-container": "#85847e",
+              "on-tertiary-fixed-variant": "#474742",
+              "outline-variant": "#c4c6cc",
+              "on-primary-container": "#778598",
+              "on-secondary-fixed-variant": "#5d4201",
+              "inverse-surface": "#303033",
+              "secondary-container": "#fed488",
+              "surface-dim": "#dcd9dd",
+              "background": "#fbf8fc",
+              "surface-container-lowest": "#ffffff",
+              "inverse-on-surface": "#f3f0f4",
+              "on-secondary": "#ffffff",
+              "primary": "#000000",
+              "tertiary": "#000000",
+              "error": "#ba1a1a",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#3a4859",
+              "on-background": "#1b1b1e",
+              "on-tertiary-fixed": "#1c1c18",
+              "on-primary-fixed": "#0f1c2c",
+              "secondary-fixed": "#ffdea5",
+              "surface-container": "#f0edf1",
+              "on-secondary-fixed": "#261900",
+              "surface-variant": "#e4e1e5",
+              "tertiary-fixed": "#e5e2db",
+              "primary-fixed": "#d6e4f9",
+              "on-surface-variant": "#44474c",
+              "inverse-primary": "#bac8dc",
+              "tertiary-container": "#1c1c18",
+              "tertiary-fixed-dim": "#c9c6c0"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      }
+      .material-symbols-outlined.icon-fill {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        min-height: max(884px, 100dvh);
+        font-family: 'Manrope', sans-serif;
+      }
+      h1, h2, h3, h4, h5 { font-family: 'Noto Serif', serif; }
+      .glass-nav {
+        background: rgba(251, 248, 252, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .pb-safe { padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px)); }
+      main { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
+      main h1, main h2, main h3, main h4, main h5, main h6 { text-align: left; hyphens: none; -webkit-hyphens: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-fixed-variant">
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_12px_40px_rgba(27,27,30,0.06)]">
+<div class="flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4 w-full max-w-7xl mx-auto gap-2 sm:gap-3 md:gap-4">
+<div class="flex items-center gap-2 sm:gap-4 shrink-0 min-w-0">
+<button id="mobile-menu-toggle" class="md:hidden text-secondary hover:opacity-70 transition-opacity shrink-0" type="button" aria-label="Ouvrir le menu" aria-controls="mobile-top-menu" aria-expanded="false">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<a href="index.html" class="flex items-center shrink-0 hover:opacity-90 transition-opacity -my-0.5 min-w-0" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" class="h-11 w-auto max-w-[10rem] sm:h-12 sm:max-w-[12rem] md:h-14 md:max-w-[14rem] lg:h-16 lg:max-w-[16rem] object-contain object-left"/></a>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-3 lg:gap-5 xl:gap-8 min-w-0 px-1 overflow-x-auto no-scrollbar scroll-smooth font-label uppercase" aria-label="Navigation principale">
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap dark:text-slate-400" href="index.html">Accueil</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap dark:text-slate-400" href="concept.html">Concept</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap dark:text-slate-400" href="exposants.html">Exposants</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap dark:text-slate-400" href="programme.html">Programme</a>
+<a class="text-secondary font-bold text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap" href="leaders.html" aria-current="page">Leaders</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap dark:text-slate-400" href="faq.html">FAQ</a>
+<a class="text-on-surface hover:opacity-70 transition-opacity text-xs lg:text-sm tracking-wide lg:tracking-widest shrink-0 whitespace-nowrap dark:text-slate-400" href="contact.html">Contact</a>
+</nav>
+<a class="bg-secondary text-on-secondary px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2 lg:px-6 rounded-lg text-[10px] sm:text-xs font-bold tracking-wide lg:tracking-widest hover:opacity-90 transition-all shrink-0 inline-flex items-center justify-center whitespace-nowrap" href="https://docs.google.com/forms/d/e/1FAIpQLSdSMSpRQ2WneJ0zrTXbNb2hWzA494sNN7RAbng6lljCMuIVUQ/viewform" target="_blank" rel="noopener noreferrer">RESERVER</a>
+</div>
+</header>
+<div id="mobile-top-menu" class="md:hidden fixed top-[4.25rem] sm:top-20 left-4 right-4 z-40 hidden">
+<div class="bg-white/95 backdrop-blur-md rounded-xl border border-outline-variant/30 shadow-[0_12px_30px_rgba(27,27,30,0.12)] p-4">
+<nav class="flex flex-col text-sm uppercase tracking-widest font-label">
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="index.html">Accueil</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="concept.html">Concept</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="exposants.html">Exposants</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="programme.html">Programme</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-secondary font-bold" href="leaders.html">Leaders</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="faq.html">FAQ</a>
+<a class="px-3 py-2 rounded-md hover:bg-surface-container-low text-on-surface" href="contact.html">Contact</a>
+</nav>
+</div>
+</div>
+<main class="pt-24 sm:pt-28 pb-40 md:pb-32">
+
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] flex items-center px-6 md:px-20 overflow-hidden py-20 md:py-28">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 z-10 bg-gradient-to-br from-[#0f1c2c]/90 via-[#0f1c2c]/80 to-[#775a19]/50"></div>
+<img alt="Assemblée de leaders chrétiens réunis dans un cadre solennel et fraternel" class="w-full h-full object-cover saturate-75 contrast-110 brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_SxgTVhm2tbJZ7r7fQI2JM6jDc5EXVGEZZszEgfQ_YEu1td_SvgKH_GrDSpvH4m_pR_tEZOfsiDyU74YBGJuWXriQT0BucWl7vyikUxkXdM8-mFhgVnByfIgk_PWY0OKYa98ljLrY5e276X530aXqcJgl_hmJGyxFA5mPYW-gf9fLmZweNR-pseAyrDcaSPAfNtcydUuDcmPBSy-kUQP56H6wBqZyB8tGfK64UJydxzzboMfcSpKGEi2F4zyUczSi_IKgqK8n8Yo"/>
+</div>
+<div class="relative z-20 max-w-4xl text-white w-full">
+<p class="font-label uppercase tracking-[0.3em] text-secondary-fixed-dim mb-6 text-sm font-semibold">CIAAC 2026 — Espace Leaders</p>
+<h1 class="text-4xl md:text-6xl font-headline leading-tight mb-8">
+Leaders d'églises
+</h1>
+<p class="text-lg md:text-xl font-body max-w-2xl mb-6 opacity-90 leading-relaxed">
+Il ne s'agit pas de dénomination, mais d'unité : un seul corps, tourné vers une mission commune.
+</p>
+<a class="inline-flex items-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold tracking-widest hover:shadow-xl transition-all" href="https://forms.gle/vSdHyTuWU8xKAGUF8" target="_blank" rel="noopener noreferrer">
+S'inscrire
+<span class="material-symbols-outlined shrink-0">arrow_forward</span>
+</a>
+</div>
+</section>
+
+<!-- Introduction -->
+<section class="px-6 md:px-20 py-20 md:py-28 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 space-y-8">
+<span class="text-secondary font-label tracking-[0.3em] text-xs uppercase">Au cœur de l'événement</span>
+<h2 class="text-3xl md:text-5xl font-headline text-primary-container leading-tight">
+Un cadre privilégié <br><span class="italic text-secondary">pour les leaders</span>
+</h2>
+<div class="w-20 h-1 bg-secondary"></div>
+<div class="text-lg font-body text-on-surface-variant leading-relaxed space-y-5">
+<p>La Conférence Internationale des Artistes et Auteurs Chrétiens rassemblera des pasteurs, prêtres, leaders et responsables de mouvements chrétiens au cœur de l'événement.</p>
+
+<p>Cet espace a été conçu comme un cadre privilégié, réservé aux leaders désireux de prendre de la hauteur, de se ressourcer et de recevoir une direction claire pour cette saison.</p>
+<p>Dans une atmosphère propice à l'écoute, à l'unité et à la présence de Dieu, ce temps se veut être un <strong>point de rencontre stratégique</strong> pour celles et ceux qui portent une vision et un appel pour la France.</p>
+</div>
+<p class="font-headline text-xl md:text-2xl leading-snug pl-6 pr-5 py-5 border-l-4 border-secondary bg-surface-container-low rounded-r-xl">
+Nous croyons que ce moment marquera une étape significative pour les leaders appelés à <span class="italic text-secondary">impacter leur génération</span>.
+</p>
+</div>
+<div class="md:col-span-5">
+<div class="bg-white rounded-xl p-10 space-y-6 shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary text-5xl">church</span>
+<h3 class="font-headline text-2xl text-primary-container">Pasteurs, prêtres, leaders</h3>
+<p class="text-on-surface-variant leading-relaxed">Cet espace est réservé aux responsables d'églises et de mouvements chrétiens, dans un esprit d'unité et d'écoute.</p>
+<div class="h-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-xl">calendar_today</span>
+<span class="font-label text-sm tracking-wide">23 mai 2026</span>
+</div>
+<div class="flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-xl">lock</span>
+<span class="font-label text-sm tracking-wide">Sur inscription uniquement</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Programme -->
+<section class="px-6 md:px-20 py-24 bg-surface-container-low">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl mb-4">Programme</h2>
+<p class="font-label tracking-widest text-secondary uppercase mb-4">Sur inscription</p>
+<div class="h-1 w-20 bg-secondary mx-auto"></div>
+</div>
+<div class="space-y-6">
+
+<!-- 9h00 -->
+<div class="flex items-start gap-8 group">
+<div class="flex flex-col items-center pt-1">
+<div class="h-3 w-3 rounded-full bg-secondary ring-4 ring-secondary/20"></div>
+<div class="h-full w-px bg-slate-200 mt-2 min-h-[2rem]"></div>
+</div>
+<div class="flex-1 pb-8">
+<div class="p-6 md:p-8 bg-white shadow-sm hover:shadow-md transition-all rounded-lg border-l-4 border-secondary">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-headline text-2xl text-primary-container min-w-[80px]">9:00</span>
+<span class="material-symbols-outlined text-secondary text-2xl">groups</span>
+</div>
+<h3 class="font-bold text-xl mb-2">Rencontre exclusive</h3>
+<p class="font-label text-sm tracking-wide text-secondary mb-4">Avec Dr Brigette Marx (Afrique du Sud)</p>
+<div class="text-on-surface-variant leading-relaxed space-y-3">
+<p>Un temps confidentiel, réservé aux pasteurs et leaders, autour d'un message concernant le cœur de Dieu pour la France.</p>
+<p>Ce moment sera consacré au partage d'une vision pour la nation, reçue de Dieu dans la prière, apportant direction, discernement et clarté pour les responsables engagés dans cette saison stratégique.</p>
+<p class="font-semibold italic text-on-surface">Un rendez-vous rare, destiné à celles et ceux qui désirent se positionner avec justesse dans les temps présents.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 14h00 -->
+<div class="flex items-start gap-8 group">
+<div class="flex flex-col items-center pt-1">
+<div class="h-3 w-3 rounded-full bg-secondary ring-4 ring-secondary/20"></div>
+<div class="h-full w-px bg-slate-200 mt-2 min-h-[2rem]"></div>
+</div>
+<div class="flex-1 pb-8">
+<div class="p-6 md:p-8 bg-white shadow-sm hover:shadow-md transition-all rounded-lg border-l-4 border-secondary/60">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-headline text-2xl text-primary-container min-w-[80px]">14:00</span>
+<span class="material-symbols-outlined text-secondary text-2xl">school</span>
+</div>
+<h3 class="font-bold text-xl mb-2">Atelier : Mentorat &amp; Leadership</h3>
+<p class="font-label text-sm tracking-wide text-secondary mb-4">Animé par Pasteur Patricia Follet — Leader inspirante, Coach &amp; Formatrice - John Maxwell Leadership France</p>
+<p class="text-on-surface-variant leading-relaxed">Un atelier d'excellence, à la fois pratique et inspirant, pour affiner votre leadership, renforcer votre capacité d'accompagnement et déployer votre influence avec impact.</p>
+</div>
+</div>
+</div>
+
+<!-- 17h30 -->
+<div class="flex items-start gap-8 group">
+<div class="flex flex-col items-center pt-1">
+<div class="h-3 w-3 rounded-full bg-secondary ring-4 ring-secondary/20"></div>
+</div>
+<div class="flex-1 pb-8">
+<div class="p-6 md:p-8 bg-white shadow-sm hover:shadow-md transition-all rounded-lg border-l-4 border-secondary/40">
+<div class="flex items-center gap-4 mb-4">
+<span class="font-headline text-2xl text-primary-container min-w-[110px]">17:30 – 18:30</span>
+<span class="material-symbols-outlined text-secondary text-2xl">handshake</span>
+</div>
+<h3 class="font-bold text-xl mb-4">Temps privilégié de rencontres</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Un moment réunissant les leaders d'églises et les participants ayant souscrit au Pass VIP, afin de favoriser des interactions plus personnelles et qualitatives.</p>
+<p class="text-on-surface-variant mb-4">Il offrira l'opportunité de :</p>
+<ul class="space-y-2 text-on-surface-variant">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0">chat</span>
+<span>Échanger et vous confier</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0">help</span>
+<span>Poser des questions</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0">lightbulb</span>
+<span>Partager des réflexions</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0">volunteer_activism</span>
+<span>Demander la prière dans une atmosphère bienveillante</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Accès & Inscription -->
+<section class="px-6 md:px-20 py-24">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline text-4xl mb-4">Accès &amp; inscription</h2>
+<div class="h-1 w-20 bg-secondary mx-auto"></div>
+</div>
+<div class="bg-surface-container-low border border-outline-variant/20 rounded-xl p-8 md:p-12 space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl shrink-0 mt-1">verified_user</span>
+<div>
+<h3 class="font-headline text-xl mb-3">Strictement réservé</h3>
+<p class="text-on-surface-variant leading-relaxed">L'Espace VIP est strictement réservé aux pasteurs, prêtres, leaders et responsables d'églises ou de mouvements chrétiens. L'accès se fait exclusivement sur inscription préalable, dans la limite des places disponibles.</p>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30"></div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl shrink-0 mt-1">payments</span>
+<div>
+<h3 class="font-headline text-xl mb-3">Participation demandée</h3>
+<p class="text-on-surface-variant leading-relaxed">Une participation est demandée. Les modalités et le lien d'inscription sont communiqués après prise de contact via le formulaire ci-dessous.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="px-6 md:px-20 py-20">
+<div class="max-w-5xl mx-auto bg-primary-container rounded-2xl p-12 text-center text-white relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full -ml-24 -mb-24"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6">diversity_1</span>
+<h2 class="font-headline text-3xl md:text-4xl mb-6 italic">Vous êtes leader d'église ?</h2>
+<p class="font-body text-slate-300 max-w-xl mx-auto mb-10 text-lg leading-relaxed">
+Rejoignez-nous pour un temps à part, dans l'unité et la présence de Dieu. Inscrivez-vous dès maintenant.
+</p>
+<a class="bg-secondary text-white px-10 py-4 rounded-lg font-label tracking-widest uppercase text-sm hover:scale-105 transition-transform duration-300 inline-flex items-center justify-center gap-3" href="https://forms.gle/vSdHyTuWU8xKAGUF8" target="_blank" rel="noopener noreferrer">
+S'inscrire
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="w-full mt-20 max-md:pb-28 bg-[#0f1c2c] dark:bg-black flex flex-col items-center py-12 px-8 text-center space-y-6">
+<a href="index.html" class="inline-flex justify-center hover:opacity-90 transition-opacity" aria-label="CIAAC, retour à l'accueil"><img src="assets/ciaac-logo.png" alt="" width="1024" height="1024" decoding="async" class="h-14 md:h-16 w-auto max-w-[12rem] object-contain"/></a>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-400 font-sans text-sm tracking-normal hover:text-[#775a19] transition-colors" href="mentions-legales.html">Mentions Légales</a>
+<a class="text-slate-400 font-sans text-sm tracking-normal hover:text-[#775a19] transition-colors" href="https://airtable.com/appe3KtRW2qL6TQK3/pag8LBgNGseQ9bQjk/form" target="_blank" rel="noopener noreferrer">Devenir Exposant</a>
+<a class="text-slate-400 font-sans text-sm tracking-normal hover:text-[#775a19] transition-colors" href="contact.html">Presse</a>
+</div>
+<div class="text-[#775a19] font-sans text-sm tracking-normal">© 2026 CIAAC Organisée par Unikai EVENTS</div>
+</footer>
+<nav class="md:hidden fixed bottom-0 left-0 right-0 w-full bg-white dark:bg-[#0f1c2c] shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-50 rounded-t-xl flex justify-around items-center pb-safe pt-2 px-2 min-h-[4rem]" aria-label="Navigation principale">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 transition-all duration-200 hover:text-[#775a19]" href="index.html">
+<span class="material-symbols-outlined">home</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Accueil</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 transition-all duration-200 hover:text-[#775a19]" href="concept.html">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Concept</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 transition-all duration-200 hover:text-[#775a19]" href="exposants.html">
+<span class="material-symbols-outlined">palette</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Exposants</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#775a19] dark:text-[#d4af37] border-t-2 border-[#775a19] pt-2 transition-all duration-200" href="leaders.html" aria-current="page">
+<span class="material-symbols-outlined icon-fill">church</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Leaders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 pt-2 transition-all duration-200 hover:text-[#775a19]" href="contact.html">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-sans text-[10px] uppercase tracking-widest mt-1">Contact</span>
+</a>
+</nav>
+<a class="fixed z-[60] bottom-28 md:bottom-8 right-4 md:right-8 flex items-center gap-2.5 rounded-2xl pl-3 pr-4 py-2.5 shadow-[0_10px_40px_rgba(221,42,123,0.35)] hover:scale-[1.04] active:scale-[0.98] transition-transform bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af] text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80" href="https://www.instagram.com/ciaacconference/" target="_blank" rel="noopener noreferrer" aria-label="CIAAC sur Instagram">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 shrink-0" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+<span class="hidden sm:inline font-label text-[10px] font-bold uppercase tracking-[0.2em]">Instagram</span>
+</a>
+<script>
+(function () {
+  var btn = document.getElementById('mobile-menu-toggle');
+  var panel = document.getElementById('mobile-top-menu');
+  if (!btn || !panel) return;
+
+  function closeMenu() {
+    panel.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+
+  btn.addEventListener('click', function () {
+    var isHidden = panel.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', isHidden ? 'false' : 'true');
+  });
+
+  panel.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('click', function (event) {
+    if (panel.classList.contains('hidden')) return;
+    if (panel.contains(event.target) || btn.contains(event.target)) return;
+    closeMenu();
+  });
+})();
+</script>
+</body>
+</html>
